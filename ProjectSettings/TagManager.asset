@@ -8,6 +8,7 @@ TagManager:
   - Actors
   - Enemy
   - Hand
+  - Powerup
   layers:
   - Default
   - TransparentFX
