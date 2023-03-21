@@ -9,6 +9,10 @@ TagManager:
   - Enemy
   - Hand
   - Powerup
+  - Ketupat
+  - Congkak
+  - Angklung
+  - BajuKurung
   layers:
   - Default
   - TransparentFX

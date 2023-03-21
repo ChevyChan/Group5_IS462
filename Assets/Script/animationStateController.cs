@@ -56,6 +56,7 @@ public class animationStateController : MonoBehaviour
                 animator.SetBool("isWalking", false);
                 StartCoroutine(PlayWinningSound());
                 completed = true;
+                StartCoroutine(RedirectUserAfterSeconds(5));
                 return;
             }
 
@@ -149,5 +150,12 @@ public class animationStateController : MonoBehaviour
         yield return new WaitForSeconds(sfx.clip.length);
         sfx.clip = applause;
         sfx.Play();
+    }
+
+    IEnumerator RedirectUserAfterSeconds(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        //TODO: Uncomment and change to return scene
+        //SceneManager.LoadScene(MainMenu);
     }
 }
